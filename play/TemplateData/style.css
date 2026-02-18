@@ -32,9 +32,11 @@
 }
 
 .webgl-content .logo {
-    background: url('logo.png') no-repeat center / contain;
-    width: 500px;
-    height: 155px;
+    /* Use site hero art instead of old logo (keep sharp, no zoom) */
+    background: url('/snow-rider-3d.png') no-repeat center;
+    background-size: contain;
+    width: 640px;
+    height: 360px;
 }
 
 .webgl-content .progress {

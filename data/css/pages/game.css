@@ -631,6 +631,25 @@
   }
 }
 
+/* Mobile: related games strip không bị tràn, nút nhỏ hơn / ẩn trên màn rất nhỏ */
+@media (max-width: 640px) {
+  #game-page .related-games {
+    padding: 0 1.5rem;
+  }
+  #game-page .related-games__nav {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media (max-width: 480px) {
+  #game-page .related-games {
+    padding: 0 1rem;
+  }
+  #game-page .related-games__nav {
+    display: none;
+  }
+}
+
 /* Related Games — same design as homepage (home-content__related + related-games__grid/card) */
 #game-page .home-content__related {
   margin-top: 0.2rem;

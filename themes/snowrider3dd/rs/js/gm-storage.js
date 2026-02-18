@@ -1,5 +1,5 @@
 class GMStorage {
-    constructor(key = 'azgames.io_storage') {
+    constructor(key = 'snowrider3d_storage_v2') {
         this.key = key;
         this.limit = 24;
         this.arrayFavoritesStorage = [];
@@ -19,6 +19,19 @@ class GMStorage {
                 this.arrayDislikesStorage = Array.isArray(parsed.arrayDislikesStorage) ? parsed.arrayDislikesStorage : [];
                 this.arrayRecentStorage = Array.isArray(parsed.arrayRecentStorage) ? parsed.arrayRecentStorage : [];
             }
+            // Ensure Snow Rider 3D always uses the updated thumbnail path
+            const fixSnowRiderImage = (arr) => {
+                if (!Array.isArray(arr)) return;
+                arr.forEach(item => {
+                    if (item && item.slug === 'snow-rider-3d') {
+                        item.image = '/snow-rider-3d.png';
+                    }
+                });
+            };
+            fixSnowRiderImage(this.arrayFavoritesStorage);
+            fixSnowRiderImage(this.arrayLikesStorage);
+            fixSnowRiderImage(this.arrayDislikesStorage);
+            fixSnowRiderImage(this.arrayRecentStorage);
         } catch (error) {
             console.error('Failed to load from localStorage:', error);
 			localStorage.removeItem(this.key);
