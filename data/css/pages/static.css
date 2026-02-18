@@ -1,1 +1,17 @@
 /* Page-specific overrides for Static pages. Add only if needed; keep base CSS unchanged. */
+
+/* Ensure bullet/numbered lists are visible on static pages (About, Contact, DMCA, Privacy, Terms). */
+.for-information ul,
+.for-information ol {
+	list-style-position: outside;
+	margin-left: 1.25rem;
+	padding-left: 1.25rem;
+}
+
+.for-information ul {
+	list-style-type: disc;
+}
+
+.for-information ol {
+	list-style-type: decimal;
+}

@@ -1233,11 +1233,11 @@ function buildStaticPages(baseHtml, staticTemplate, contentDirStatic, baseUrl, c
   const canonicalBase = baseUrlForStatic + '/';
   /** Meta description 100–160 chars, no keyword spam. */
   const staticDescs = {
-    'about-us': 'Learn about Snow Rider 3D, our team, and our collection of free online games. Discover our mission and how we bring the best browser games to you.',
-    'contact-us': 'Get in touch with Snow Rider 3D for support, feedback, or partnership. We\'re here to help with any questions about our games and website.',
-    'dmca': 'DMCA and copyright policy for Snow Rider 3D. Learn how we handle copyright claims and protect intellectual property on our platform.',
-    'privacy-policy': 'Privacy policy for Snow Rider 3D. Learn how we collect, use, and protect your data when you visit our site and play our games.',
-    'terms-of-service': 'Terms of service for using Snow Rider 3D. Read the rules and conditions that apply when you access our games and website.',
+    'about-us': 'Learn more about SnowRider-3D.org, an independent website providing browser-based entertainment for users in the United States.',
+    'contact-us': 'Contact SnowRider-3D.org for general inquiries, feedback, or support. We are available via email for users in the United States.',
+    'dmca': 'SnowRider-3D.org respects intellectual property rights and responds promptly to valid DMCA takedown requests.',
+    'privacy-policy': 'This Privacy Policy explains how SnowRider-3D.org collects, uses, and protects user information in accordance with U.S. regulations.',
+    'terms-of-service': 'Read the Terms of Service governing the use of SnowRider-3D.org, including user responsibilities and limitations of liability.',
   };
   for (const page of STATIC_PAGES) {
     const contentPath = path.join(contentDirStatic, page.file);
