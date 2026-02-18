@@ -1,0 +1,114 @@
+# TẤT CẢ LINK TRONG SITE – Để kiểm tra từng link
+
+Base URL: https://snowrider-3d.org
+
+---
+## A. Trang chính (từ sitemap.xml) – 49 link
+
+### Trang chủ & Game (26)
+https://snowrider-3d.org/
+https://snowrider-3d.org/snow-rider-3d
+https://snowrider-3d.org/snow-rider-2
+https://snowrider-3d.org/snow-rush-3d
+https://snowrider-3d.org/christmas-sledge-rider-3d
+https://snowrider-3d.org/vex-3-xmas
+https://snowrider-3d.org/drive-mad-winter
+https://snowrider-3d.org/moto-x3m-winter
+https://snowrider-3d.org/1v1-lol
+https://snowrider-3d.org/basketball-stars
+https://snowrider-3d.org/bloodmoney
+https://snowrider-3d.org/cookie-clicker
+https://snowrider-3d.org/crossy-road
+https://snowrider-3d.org/drift-boss
+https://snowrider-3d.org/eggy-car
+https://snowrider-3d.org/friday-night-funkin
+https://snowrider-3d.org/ragdoll-archers
+https://snowrider-3d.org/subway-surfers
+https://snowrider-3d.org/fruit-ninja
+https://snowrider-3d.org/stickman-hook
+https://snowrider-3d.org/block-blast
+https://snowrider-3d.org/snow-rider-obby-parkour
+https://snowrider-3d.org/ski-frenzy
+https://snowrider-3d.org/slope-snowball
+https://snowrider-3d.org/winter-rider
+https://snowrider-3d.org/escape-school-duel
+
+### Category (14)
+https://snowrider-3d.org/hot.games/
+https://snowrider-3d.org/trending.games/
+https://snowrider-3d.org/snow-rider.games/
+https://snowrider-3d.org/clicker.games/
+https://snowrider-3d.org/io.games/
+https://snowrider-3d.org/adventure.games/
+https://snowrider-3d.org/2-player.games/
+https://snowrider-3d.org/shooting.games/
+https://snowrider-3d.org/sports.games/
+https://snowrider-3d.org/car.games/
+https://snowrider-3d.org/puzzle.games/
+https://snowrider-3d.org/casual.games/
+https://snowrider-3d.org/kids.games/
+https://snowrider-3d.org/all.games/
+
+### Static (5)
+https://snowrider-3d.org/about-us/
+https://snowrider-3d.org/contact-us/
+https://snowrider-3d.org/dmca/
+https://snowrider-3d.org/privacy-policy/
+https://snowrider-3d.org/terms-of-service/
+
+---
+## B. Link khác trong site (không có trong sitemap)
+
+### Trang chức năng
+https://snowrider-3d.org/search/
+https://snowrider-3d.org/404.html
+
+### Khung chơi (iframe – không cần click)
+https://snowrider-3d.org/play/
+
+---
+## C. Link trong menu/header (trùng với sitemap)
+
+/  (Trang chủ)
+/snow-rider.games/
+/clicker.games/
+/io.games/
+/adventure.games/
+/shooting.games/
+/sports.games/
+/puzzle.games/
+/casual.games/
+
+---
+## D. Link trong footer (trùng với sitemap)
+
+/about-us/
+/contact-us/
+/dmca/
+/privacy-policy/
+/terms-of-service/
+
+---
+## E. Related Games (trang chủ) – ĐÃ SỬA
+
+Các link Related Games đã được sửa trỏ đúng game có trong site:
+/snow-rush-3d  → Snow Rush 3D
+/snow-rider-3d → Snow Rider 3D
+/snow-rider-2  → Snow Rider 2
+
+---
+## F. Dạng URL game
+
+- Có dấu slash: https://snowrider-3d.org/escape-school-duel/  (trỏ tới escape-school-duel/index.html)
+- Không dấu slash: https://snowrider-3d.org/escape-school-duel   (cũng trỏ tới trang game)
+
+Cả hai đều hợp lệ nhờ slug/index.html.
+
+---
+## G. Tổng số link trang cần kiểm tra (không trùng)
+
+1. Trang chủ + 25 game + 14 category + 5 static = 45 URL sitemap (trang)
+2. Thêm: /search/ , /404.html
+3. Tổng: 47 link trang. Cộng với /play/ (iframe) = 48.
+
+Kiểm tra từng link: mở từng URL trên trình duyệt (hoặc dùng tool check broken link) để đảm bảo không 404.

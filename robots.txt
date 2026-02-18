@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /dist/
+Disallow: /scripts/
+Disallow: /templates/
+Disallow: /docs/
+Disallow: /content/
+Sitemap: https://snowrider-3d.org/sitemap.xml

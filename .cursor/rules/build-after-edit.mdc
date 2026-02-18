@@ -1,0 +1,11 @@
+---
+description: Run npm run build after editing code (templates, data, content, themes, scripts)
+alwaysApply: true
+---
+
+# Build after editing
+
+After each edit to code in this project (templates, data, content, themes, scripts, or any file that affects output), **run `npm run build`** to update output at repo root (index.html, 404.html, robots.txt, sitemap.xml, game/category/static pages).
+
+- In PowerShell: `Set-Location "project_path"; npm run build`
+- Do not use `&&` (PowerShell does not support it); use `;` to chain commands.

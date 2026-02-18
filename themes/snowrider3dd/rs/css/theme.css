@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: #5c3317;
+    background-color: transparent;
+}
+
+.us-menuheader-list {
+    white-space: nowrap;
+    background-color: #b85c1a;
+    box-shadow: 0 4px 0 #8a4510, 0 12px 24px rgba(0, 0, 0, .25);
+    margin-bottom: 30px;
+}
+
+.header-wrapper-title {
+    color: #8a4510;
+    font-size: 1.25rem;
+    font-family: Fredoka One, Verdana, sans-serif;
+}
+
+.header-wrapper-link {
+    color: #ff7a18;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.txt-search {
+    padding: 9px 16px 9px 45px;
+    background-color: #b85c1a;
+    width: 100%;
+    border-radius: 999px;
+    color: #fff5eb;
+    border: 2px solid #d4832e;
+    outline: none;
+    box-shadow: inset 0 0 12px rgba(212, 131, 46, .25);
+}
+
+.txt-search::placeholder {
+    color: #ffe4cc;
+}
+
+.game-flow {
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+    background-color: #b85c1a;
+    color: #ffffff;
+    border-radius: 16px;
+}
+
+.us-content {
+    background-color: #c97d3a;
+    padding: 30px;
+    border-radius: 18px;
+    margin-top: 35px;
+    box-shadow:
+        0 16px 32px rgba(0, 0, 0, .55),
+        inset 0 0 22px rgba(255, 228, 196, .12);
+    color: #fff5eb;
+}
+
+footer {
+    padding: 1.2rem 0;
+    background-color: #8a4510;
+    color: #ffe4cc;
+}
+
+.fixed-menu-mobile {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #b85c1a;
+    z-index: 1199;
+    transition: right .4s ease;
+    overflow-y: auto;
+}
+
+.mygames__panel {
+    width: 100%;
+    max-width: 400px;
+    height: calc(100% - 16px);
+    top: 8px;
+    right: 0;
+    position: fixed;
+    background-color: #9a4a1a;
+    color: #fff5eb;
+    border-radius: 18px;
+    box-shadow:
+        -12px 0 30px rgba(0, 0, 0, .65),
+        inset 0 0 20px rgba(255, 228, 196, .1);
+
+    display: none;
+    flex-direction: column;
+    z-index: 1200;
+    scrollbar-color: #d4832e transparent;
+}
+
+h2 {
+    color: #ffcc00;
+}
+
+.link:hover {
+    color: #ffcc00;
+}

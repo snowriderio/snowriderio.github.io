@@ -1,0 +1,51 @@
+/* 404 page – SEO-friendly: single clear H1, short content, links to home + search */
+/* Sticky footer: push footer to bottom when 404 content is short */
+body:has(#page-404) {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body:has(#page-404) #page-404 {
+  flex: 1 0 auto;
+}
+#page-404.main-wrapper {
+  padding: 2rem 1rem;
+  min-height: 40vh;
+}
+#page-404 .container {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-404-content {
+  padding: 2rem 0;
+}
+.page-404-inner {
+  text-align: center;
+}
+.page-404-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+.page-404-lead {
+  margin: 0 0 1.5rem 0;
+  color: inherit;
+  line-height: 1.5;
+}
+.page-404-actions {
+  margin: 0;
+}
+.page-404-link {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.page-404-link:hover {
+  text-decoration: none;
+}
+.page-404-sep {
+  margin: 0 0.5rem;
+  opacity: 0.7;
+}

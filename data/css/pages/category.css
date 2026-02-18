@@ -1,0 +1,279 @@
+/* Category pages: single source for all /<slug>.games/ pages. Keep in sync with templates/pages/category.html */
+/* Two-tone orange background (darker than site #f5e6d3), About block dark orange, yellow/white text */
+
+/* Remove overlay and gradient: use body background (light orange + snow) */
+.page-category.main-wrapper {
+  background: transparent !important;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  overflow-x: hidden;
+  border: none !important;
+  box-shadow: none !important;
+}
+.page-category .container,
+.page-category .row {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Game section: not inside a block, directly on blue background */
+.page-category .category-game-section {
+  padding: 0;
+  margin-bottom: 0;
+  background: transparent;
+}
+
+.page-category .game-about {
+  padding: 0.5rem 0;
+}
+
+/* Breadcrumb (inside .category-content-below, below game grid) - larger text */
+.page-category .category-content-below .bread-crumb {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.page-category .game-about .bread-crumb {
+  margin-bottom: 1rem;
+}
+.page-category .game-about .bread-crumb-list {
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
+  justify-content: flex-start;
+}
+.page-category .game-about .bread-crumb-item {
+  color: #fff;
+  display: inline-flex;
+  font-size: 1.1rem;
+}
+.page-category .game-about .bread-crumb-item:hover {
+  color: #fccc00;
+}
+.page-category .game-about .bread-crumb-sep {
+  color: #fff;
+  margin: 0 0.35rem;
+  user-select: none;
+}
+.page-category .game-about .bread-crumb-current {
+  color: #fccc00;
+  font-weight: 600;
+}
+
+/* Category title (e.g. Clicker Games) - large, bold */
+.page-category .category-header {
+  margin-bottom: 1.25rem;
+}
+.page-category .category-title {
+  color: #8a4510;
+  font-size: 1.85rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+}
+
+.page-category .category-subtitle {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Grid game cards: 8 columns x 3 rows (24 games/page), square images */
+.page-category .category-game-grid {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  gap: 0.75rem;
+  padding: 4px;
+  grid-template-columns: repeat(8, 1fr);
+}
+@media (max-width: 1200px) {
+  .page-category .category-game-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .page-category .category-game-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .page-category .category-game-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.page-category .category-game-grid .us-grid-game {
+  padding-bottom: 0;
+  position: relative;
+  aspect-ratio: 1;
+}
+.page-category .category-game-grid .us-game-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.page-category .category-game-grid .us-wrap-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Content block same as homepage (.us-content in theme.css): orange background, rounded corners, shadow */
+.page-category .us-content.game-about.category-about,
+.page-category .us-content.game-flow.game-flow-b.game-about {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: 0.75rem;
+  background-color: #c97d3a !important;
+  background: #c97d3a !important;
+  box-shadow:
+    0 16px 32px rgba(0, 0, 0, 0.55),
+    inset 0 0 22px rgba(255, 228, 196, 0.12) !important;
+  border: none !important;
+  outline: none !important;
+  box-sizing: border-box;
+  padding: 30px !important;
+  border-radius: 18px !important;
+  color: #fff5eb;
+  overflow: hidden;
+}
+.page-category .category-content-below {
+  margin-top: 0;
+  padding-top: 0;
+  max-width: none;
+}
+
+/* When there are no games */
+.page-category .category-empty {
+  margin-bottom: 1rem;
+}
+.page-category .category-empty-msg {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.15rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 0 0 1rem 0;
+}
+
+/* About: same block as breadcrumb & More categories, no separate inner block */
+.page-category .category-about-box {
+  margin-top: 1.5rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+.page-category .category-about-title {
+  color: #ffcc00;
+  font-size: 1.65rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
+}
+.page-category .category-about-desc {
+  color: #fff5eb;
+  font-size: 1.15rem;
+  line-height: 1.65;
+  margin: 0 0 1.25rem 0;
+}
+.page-category .category-popular-heading {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+.page-category .category-game-names-list {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #fff5eb;
+  font-size: 1.15rem;
+}
+.page-category .category-game-names-list li {
+  margin-bottom: 0.4rem;
+}
+.page-category .category-game-names-list a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+.page-category .category-game-names-list a:hover {
+  text-decoration: underline;
+}
+
+/* Pagination: Prev, 1 2 3, Next */
+.page-category .category-pagination-wrap {
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+}
+.page-category .category-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.page-category .category-pagination-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  align-items: center;
+}
+.page-category .category-pagination-link {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+.page-category .category-pagination-link:hover {
+  background: #fccc00;
+  color: #8a4510;
+}
+.page-category .category-pagination-current {
+  padding: 0.5rem 0.9rem;
+  background: #fccc00;
+  color: #8a4510;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+/* More categories - inside block, same as homepage */
+.page-category .category-cate {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.page-category .category-cate-label {
+  display: block;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.page-category .category-cate .game-cate-link {
+  background: #e8a84a;
+  border: 1px solid #fff;
+  border-radius: 999px;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.05rem;
+  padding: 8px 18px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.page-category .category-cate .game-cate-link:hover {
+  background: #d99738;
+  color: #fff;
+  text-decoration: underline;
+}

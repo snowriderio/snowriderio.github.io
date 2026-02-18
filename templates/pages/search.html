@@ -1,0 +1,21 @@
+	<div id="search-page" class="main-wrapper search-page-wrapper">
+		<div class="container">
+			<div class="row">
+				<header class="search-page-header">
+					<h1 class="search-page-title">Search games</h1>
+					<p class="search-page-lead">Find your favorite free online games by name or category.</p>
+					<form class="search-page-form" action="/search/" method="GET" role="search">
+						<label for="search-page-query" class="visually-hidden">Search games</label>
+						<input type="search" id="search-page-query" name="q" class="search-page-input" placeholder="Type game name or category..." autocomplete="off" value="" />
+						<button type="submit" class="search-page-submit" aria-label="Search">
+							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+							<span>Search</span>
+						</button>
+					</form>
+				</header>
+				<div id="search-page-results" class="search-page-results us-grid-clayover">
+					<!-- Results loaded by JS from ?q= -->
+				</div>
+			</div>
+		</div>
+	</div>
