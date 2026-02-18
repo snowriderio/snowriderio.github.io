@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', function () {
         script.onload = callback;
         document.body.appendChild(script);
     }
-    let raty_script_url = "/themes/snowrider3dd/rs/plugins/raty/jquery.raty.js";
+    let raty_script_url = "/themes/snowrider3d/rs/plugins/raty/jquery.raty.js";
     loadScript(raty_script_url, () => {
         rateForFun();
         ratingJs();

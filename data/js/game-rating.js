@@ -110,6 +110,6 @@
     document.addEventListener('DOMContentLoaded', function () {
         if (typeof $ === 'undefined') return;
 
-        loadScript('/themes/snowrider3dd/rs/plugins/raty/jquery.raty.js', initRating);
+        loadScript('/themes/snowrider3d/rs/plugins/raty/jquery.raty.js', initRating);
     });
 })();
