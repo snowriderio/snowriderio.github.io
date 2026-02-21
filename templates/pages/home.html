@@ -3,8 +3,9 @@
 		<div class="row game__control-height-one">
 			<div class="overbox-game">
 				<div class="game-middle box-frame">
-					<div class="game-iframe-wrap">
-						<iframe id="iframehtml5" title="Snow Rider 3D" src="/play/" allowfullscreen loading="lazy"></iframe>
+					<div class="game-iframe-wrap" id="game-iframe-wrap">
+						<img class="game-iframe-poster" id="game-iframe-poster" src="/data/image/snow-rider-3d-game-title-screen.png" alt="Snow Rider 3D" width="800" height="450" decoding="async" fetchpriority="high">
+						<iframe id="iframehtml5" title="Snow Rider 3D" data-src="/play/" allowfullscreen loading="lazy"></iframe>
 					</div>
 					<div class="game-flow" id="header-game">
 						<div class="header-game">
@@ -33,8 +34,8 @@
 						</div>
 						<span class="exit-fullscreen hidden" id="_exit_full_screen"><svg fill="#fff" width="24" height="24" version="1.1" x="0px" y="0px" viewbox="0 0 512.001 512.001"><path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717 L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859 c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287 l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285 L284.286,256.002z"></path></svg></span>
 					</div>
-					<!-- Trending games rail: up to 20 games (2 rows x 10), newest first; empty cells do not scale image -->
-					<div class="game-show-category">
+					<!-- Trending games rail: up to 20 games (2 rows x 10), newest first; empty cells do not scale image. Hidden on mobile to avoid overlap with Snow Rider Games. -->
+					<div class="game-show-category home-trending-section">
 						<div class="widget wiget-title" style="margin-bottom: 0.5rem;">
 							<h2 style="margin: 0;">Trending Games</h2>
 							<a class="header-wrapper-link" href="/trending.games/">View more ›</a>

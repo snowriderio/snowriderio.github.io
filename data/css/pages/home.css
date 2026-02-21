@@ -991,6 +991,19 @@
   max-width: 720px;
 }
 
+/* Mobile: cho tiêu đề xuống dòng, tránh bị cắt chữ */
+@media (max-width: 640px) {
+  .home-content__related-title {
+    white-space: normal;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    line-height: 1.35;
+  }
+  .home-content__related-title--wide {
+    max-width: calc(100% - 1rem);
+  }
+}
+
 .home-content__overview-wrap {
   width: 100%;
   max-width: 52em;

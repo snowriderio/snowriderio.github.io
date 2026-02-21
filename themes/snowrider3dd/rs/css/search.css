@@ -177,7 +177,7 @@
     }
 
     .us-grid-clayover {
-        grid-template-columns: repeat(var(--col));
+        grid-template-columns: repeat(var(--col), 1fr);
     }
 }
 

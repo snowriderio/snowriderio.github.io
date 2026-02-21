@@ -43,29 +43,35 @@
 	<script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://snowrider-3d.org/"},{"@type":"ListItem","position":2,"name":"Adventure","item":"https://snowrider-3d.org/adventure.games/"},{"@type":"ListItem","position":3,"name":"Drive Mad Winter","item":"https://snowrider-3d.org/drive-mad-winter"}]},{"@type":"WebPage","name":"Drive Mad Winter","url":"https://snowrider-3d.org/drive-mad-winter","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"Snow Rider 3D","url":"https://snowrider-3d.org/"}},{"@type":"VideoGame","name":"Drive Mad Winter","url":"https://snowrider-3d.org/drive-mad-winter","description":"Set on snowy terrain filled with broken bridges, Drive Mad Winter tests your ability to keep a monster truck steady under harsh winter conditions","image":["https://snowrider-3d.org/upload/drive-mad-winter.png"],"genre":["Adventure","Car"],"operatingSystem":"Web","applicationCategory":"Game","inLanguage":"en","publisher":{"@type":"Organization","name":"Snow Rider 3D","url":"https://snowrider-3d.org/"},"dateModified":"2026-02-18","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.4","ratingCount":"90","bestRating":"5","worstRating":"1"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}]}
 	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preload" href="/data/image/logo-snow-rider-3d.png" as="image">
 	<link rel="preload" href="/themes/snowrider3d/rs/css/critical.css" as="style">
 	<link rel="stylesheet" type="text/css" href="/themes/snowrider3d/rs/css/critical.css">
 	<link rel="preload" href="/themes/snowrider3d/rs/css/all.css" as="style"
 		onload="this.onload=null;this.rel='stylesheet'">
 	<link rel="stylesheet" type="text/css" href="/themes/snowrider3d/rs/css/theme.css">
-	<link rel="stylesheet" type="text/css" href="/themes/snowrider3d/rs/css/search.css">
 	<link rel="stylesheet" type="text/css" href="/themes/snowrider3d/rs/css/custom.css">
-	<link rel="stylesheet" type="text/css" href="/themes/snowrider3d/rs/css/theme-winter-bg.css">
+	<link rel="stylesheet" type="text/css" href="/themes/snowrider3d/rs/css/search.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" type="text/css" href="/themes/snowrider3d/rs/css/theme-winter-bg.css" media="print" onload="this.media='all'">
+	<noscript><link rel="stylesheet" href="/themes/snowrider3d/rs/css/search.css"><link rel="stylesheet" href="/themes/snowrider3d/rs/css/theme-winter-bg.css"></noscript>
 		<link rel="stylesheet" type="text/css" href="/data/css/pages/game.css">
 	<link rel="preload" href="/themes/snowrider3d/rs/js/gm-storage.js" as="script">
-	<script src="/themes/snowrider3d/rs/js/gm-storage.js"></script>
+	<script src="/themes/snowrider3d/rs/js/gm-storage.js" defer></script>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
-		rel="stylesheet">
+		rel="stylesheet" media="print" onload="this.media='all'">
+	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"></noscript>
 	<link as="style" href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;display=swap"
 		rel="stylesheet preload prefetch" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<!-- Google Analytics 4 (GA4) -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"></noscript>
+	<!-- Google Analytics 4 (GA4) - config deferred to reduce TBT -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LFQV6VSLFV"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-		gtag('config', 'G-LFQV6VSLFV');
+		setTimeout(function() { gtag('config', 'G-LFQV6VSLFV'); }, 5000);
 	</script>
 </head>
 
@@ -309,7 +315,7 @@
 									<div class="us-wrap-image"><img alt="Escape School Duel game thumbnail" height="200" loading="lazy" src="/upload/escape-school-duel.png" title="Escape School Duel" width="200" />
 										<div class="us-game-title" title="Escape School Duel"><span class="text-overflow">Escape School Duel</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -327,7 +333,7 @@
 									<div class="us-wrap-image"><img alt="Snow Rush 3D game thumbnail" height="200" loading="lazy" src="/upload/snow-rush-3d.png" title="Snow Rush 3D" width="200" />
 										<div class="us-game-title" title="Snow Rush 3D"><span class="text-overflow">Snow Rush 3D</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -336,7 +342,7 @@
 									<div class="us-wrap-image"><img alt="Christmas Sledge Rider 3D game thumbnail" height="200" loading="lazy" src="/upload/christmas-sledge-rider-3d.png" title="Christmas Sledge Rider 3D" width="200" />
 										<div class="us-game-title" title="Christmas Sledge Rider 3D"><span class="text-overflow">Christmas Sledge Rider 3D</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -345,7 +351,7 @@
 									<div class="us-wrap-image"><img alt="Vex 3 Xmas game thumbnail" height="200" loading="lazy" src="/upload/vex-3-xmas.png" title="Vex 3 Xmas" width="200" />
 										<div class="us-game-title" title="Vex 3 Xmas"><span class="text-overflow">Vex 3 Xmas</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -354,7 +360,7 @@
 									<div class="us-wrap-image"><img alt="Moto X3M Winter game thumbnail" height="200" loading="lazy" src="/upload/moto-x3m-winter.png" title="Moto X3M Winter" width="200" />
 										<div class="us-game-title" title="Moto X3M Winter"><span class="text-overflow">Moto X3M Winter</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -363,7 +369,7 @@
 									<div class="us-wrap-image"><img alt="1v1.LOL game thumbnail" height="200" loading="lazy" src="/upload/1v1-lol.png" title="1v1.LOL" width="200" />
 										<div class="us-game-title" title="1v1.LOL"><span class="text-overflow">1v1.LOL</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -372,7 +378,7 @@
 									<div class="us-wrap-image"><img alt="Basketball Stars game thumbnail" height="200" loading="lazy" src="/upload/basketball-stars.png" title="Basketball Stars" width="200" />
 										<div class="us-game-title" title="Basketball Stars"><span class="text-overflow">Basketball Stars</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -390,7 +396,7 @@
 									<div class="us-wrap-image"><img alt="Cookie Clicker game thumbnail" height="200" loading="lazy" src="/upload/cookie-clicker.png" title="Cookie Clicker" width="200" />
 										<div class="us-game-title" title="Cookie Clicker"><span class="text-overflow">Cookie Clicker</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -408,7 +414,7 @@
 									<div class="us-wrap-image"><img alt="Drift Boss game thumbnail" height="200" loading="lazy" src="/upload/drift-boss.png" title="Drift Boss" width="200" />
 										<div class="us-game-title" title="Drift Boss"><span class="text-overflow">Drift Boss</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -417,7 +423,7 @@
 									<div class="us-wrap-image"><img alt="Eggy Car game thumbnail" height="200" loading="lazy" src="/upload/eggy-car.png" title="Eggy Car" width="200" />
 										<div class="us-game-title" title="Eggy Car"><span class="text-overflow">Eggy Car</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -435,7 +441,7 @@
 									<div class="us-wrap-image"><img alt="Ragdoll Archers game thumbnail" height="200" loading="lazy" src="/upload/ragdoll-archers.png" title="Ragdoll Archers" width="200" />
 										<div class="us-game-title" title="Ragdoll Archers"><span class="text-overflow">Ragdoll Archers</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -444,7 +450,7 @@
 									<div class="us-wrap-image"><img alt="Fruit Ninja game thumbnail" height="200" loading="lazy" src="/upload/fruit-ninja.png" title="Fruit Ninja" width="200" />
 										<div class="us-game-title" title="Fruit Ninja"><span class="text-overflow">Fruit Ninja</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -453,7 +459,7 @@
 									<div class="us-wrap-image"><img alt="Stickman Hook game thumbnail" height="200" loading="lazy" src="/upload/stickman-hook.png" title="Stickman Hook" width="200" />
 										<div class="us-game-title" title="Stickman Hook"><span class="text-overflow">Stickman Hook</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -462,7 +468,7 @@
 									<div class="us-wrap-image"><img alt="Block Blast game thumbnail" height="200" loading="lazy" src="/upload/block-blast.png" title="Block Blast" width="200" />
 										<div class="us-game-title" title="Block Blast"><span class="text-overflow">Block Blast</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -471,7 +477,7 @@
 									<div class="us-wrap-image"><img alt="Snow Rider Obby Parkour game thumbnail" height="200" loading="lazy" src="/upload/snow-rider-obby-parkour.png" title="Snow Rider Obby Parkour" width="200" />
 										<div class="us-game-title" title="Snow Rider Obby Parkour"><span class="text-overflow">Snow Rider Obby Parkour</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -489,7 +495,7 @@
 									<div class="us-wrap-image"><img alt="Slope Snowball game thumbnail" height="200" loading="lazy" src="/upload/slope-snowball.png" title="Slope Snowball" width="200" />
 										<div class="us-game-title" title="Slope Snowball"><span class="text-overflow">Slope Snowball</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -498,7 +504,7 @@
 									<div class="us-wrap-image"><img alt="Winter Rider game thumbnail" height="200" loading="lazy" src="/upload/winter-rider.png" title="Winter Rider" width="200" />
 										<div class="us-game-title" title="Winter Rider"><span class="text-overflow">Winter Rider</span></div>
 									</div>
-									<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+									<div class="GameThumbLabel GameThumbLabel_New">New</div>
 									<div class="GameThumb_gradientVignette__Q04oZ"></div>
 								</a>
 							</div>
@@ -885,7 +891,7 @@
 										<div class="us-wrap-image"><img alt="Escape School Duel game thumbnail" height="200" loading="lazy" src="/upload/escape-school-duel.png" title="Escape School Duel" width="200" />
 											<div class="us-game-title" title="Escape School Duel"><span class="text-overflow">Escape School Duel</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -903,7 +909,7 @@
 										<div class="us-wrap-image"><img alt="Snow Rush 3D game thumbnail" height="200" loading="lazy" src="/upload/snow-rush-3d.png" title="Snow Rush 3D" width="200" />
 											<div class="us-game-title" title="Snow Rush 3D"><span class="text-overflow">Snow Rush 3D</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -912,7 +918,7 @@
 										<div class="us-wrap-image"><img alt="Christmas Sledge Rider 3D game thumbnail" height="200" loading="lazy" src="/upload/christmas-sledge-rider-3d.png" title="Christmas Sledge Rider 3D" width="200" />
 											<div class="us-game-title" title="Christmas Sledge Rider 3D"><span class="text-overflow">Christmas Sledge Rider 3D</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -921,7 +927,7 @@
 										<div class="us-wrap-image"><img alt="Vex 3 Xmas game thumbnail" height="200" loading="lazy" src="/upload/vex-3-xmas.png" title="Vex 3 Xmas" width="200" />
 											<div class="us-game-title" title="Vex 3 Xmas"><span class="text-overflow">Vex 3 Xmas</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -930,7 +936,7 @@
 										<div class="us-wrap-image"><img alt="Moto X3M Winter game thumbnail" height="200" loading="lazy" src="/upload/moto-x3m-winter.png" title="Moto X3M Winter" width="200" />
 											<div class="us-game-title" title="Moto X3M Winter"><span class="text-overflow">Moto X3M Winter</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -939,7 +945,7 @@
 										<div class="us-wrap-image"><img alt="1v1.LOL game thumbnail" height="200" loading="lazy" src="/upload/1v1-lol.png" title="1v1.LOL" width="200" />
 											<div class="us-game-title" title="1v1.LOL"><span class="text-overflow">1v1.LOL</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -948,7 +954,7 @@
 										<div class="us-wrap-image"><img alt="Basketball Stars game thumbnail" height="200" loading="lazy" src="/upload/basketball-stars.png" title="Basketball Stars" width="200" />
 											<div class="us-game-title" title="Basketball Stars"><span class="text-overflow">Basketball Stars</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -966,7 +972,7 @@
 										<div class="us-wrap-image"><img alt="Cookie Clicker game thumbnail" height="200" loading="lazy" src="/upload/cookie-clicker.png" title="Cookie Clicker" width="200" />
 											<div class="us-game-title" title="Cookie Clicker"><span class="text-overflow">Cookie Clicker</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -984,7 +990,7 @@
 										<div class="us-wrap-image"><img alt="Drift Boss game thumbnail" height="200" loading="lazy" src="/upload/drift-boss.png" title="Drift Boss" width="200" />
 											<div class="us-game-title" title="Drift Boss"><span class="text-overflow">Drift Boss</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -993,7 +999,7 @@
 										<div class="us-wrap-image"><img alt="Eggy Car game thumbnail" height="200" loading="lazy" src="/upload/eggy-car.png" title="Eggy Car" width="200" />
 											<div class="us-game-title" title="Eggy Car"><span class="text-overflow">Eggy Car</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -1011,7 +1017,7 @@
 										<div class="us-wrap-image"><img alt="Ragdoll Archers game thumbnail" height="200" loading="lazy" src="/upload/ragdoll-archers.png" title="Ragdoll Archers" width="200" />
 											<div class="us-game-title" title="Ragdoll Archers"><span class="text-overflow">Ragdoll Archers</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -1020,7 +1026,7 @@
 										<div class="us-wrap-image"><img alt="Fruit Ninja game thumbnail" height="200" loading="lazy" src="/upload/fruit-ninja.png" title="Fruit Ninja" width="200" />
 											<div class="us-game-title" title="Fruit Ninja"><span class="text-overflow">Fruit Ninja</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -1029,7 +1035,7 @@
 										<div class="us-wrap-image"><img alt="Stickman Hook game thumbnail" height="200" loading="lazy" src="/upload/stickman-hook.png" title="Stickman Hook" width="200" />
 											<div class="us-game-title" title="Stickman Hook"><span class="text-overflow">Stickman Hook</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -1038,7 +1044,7 @@
 										<div class="us-wrap-image"><img alt="Block Blast game thumbnail" height="200" loading="lazy" src="/upload/block-blast.png" title="Block Blast" width="200" />
 											<div class="us-game-title" title="Block Blast"><span class="text-overflow">Block Blast</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -1047,7 +1053,7 @@
 										<div class="us-wrap-image"><img alt="Snow Rider Obby Parkour game thumbnail" height="200" loading="lazy" src="/upload/snow-rider-obby-parkour.png" title="Snow Rider Obby Parkour" width="200" />
 											<div class="us-game-title" title="Snow Rider Obby Parkour"><span class="text-overflow">Snow Rider Obby Parkour</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -1065,7 +1071,7 @@
 										<div class="us-wrap-image"><img alt="Slope Snowball game thumbnail" height="200" loading="lazy" src="/upload/slope-snowball.png" title="Slope Snowball" width="200" />
 											<div class="us-game-title" title="Slope Snowball"><span class="text-overflow">Slope Snowball</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -1074,7 +1080,7 @@
 										<div class="us-wrap-image"><img alt="Winter Rider game thumbnail" height="200" loading="lazy" src="/upload/winter-rider.png" title="Winter Rider" width="200" />
 											<div class="us-game-title" title="Winter Rider"><span class="text-overflow">Winter Rider</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -1122,11 +1128,12 @@
 		<div class="loading_page"><img class="loadingImage" width="44" height="44"
 				src="/themes/snowrider3d/rs/imgs/us-page-loading.gif" /></div>
 	</div>
-	<script src="/themes/snowrider3d/rs/js/jquery-3.4.1.min.js"></script>
-	<script src="/themes/snowrider3d/rs/js/jquery.validate.min.js"></script>
-	<script src="/themes/snowrider3d/rs/js/footer.js"></script>
-	<script src="/data/js/search.js"></script>
-	<script src="/themes/snowrider3d/rs/js/fullscreen.js"></script>
+	<script src="/data/js/lazy-iframe.js" defer></script>
+	<script src="/themes/snowrider3d/rs/js/jquery-3.4.1.min.js" defer></script>
+	<script src="/themes/snowrider3d/rs/js/jquery.validate.min.js" defer></script>
+	<script src="/themes/snowrider3d/rs/js/footer.js" defer></script>
+	<script src="/data/js/search.js" defer></script>
+	<script src="/themes/snowrider3d/rs/js/fullscreen.js" defer></script>
 	<script src="/data/js/sidebar-games.js" defer></script>
 	<script src="/data/js/related-games-scroll.js" defer></script>
 </body>

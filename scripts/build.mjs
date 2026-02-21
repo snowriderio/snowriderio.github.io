@@ -1552,6 +1552,10 @@ homeFull = replaceCategoryLinks(homeFull, categoryCanonicalSlugMap);
 homeFull = replaceGameLinks(homeFull);
 const homeCanonicalFull = baseUrlForHome.replace(/\/$/, '') + '/';
 homeFull = homeFull.replace(/__HOME_CANONICAL_URL__/g, homeCanonicalFull);
+homeFull = homeFull.replace(
+  /<link rel="preload" href="\/data\/image\/logo-snow-rider-3d\.png" as="image">/,
+  '<link rel="preload" href="/data/image/logo-snow-rider-3d.png" as="image">\n\t<link rel="preload" href="/data/image/snow-rider-3d-game-title-screen.png" as="image">'
+);
 writeDist('index.html', homeFull);
 
 // 404 (root dist/404.html for GitHub Pages)

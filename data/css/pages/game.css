@@ -631,10 +631,24 @@
   }
 }
 
-/* Mobile: related games strip không bị tràn, nút nhỏ hơn / ẩn trên màn rất nhỏ */
+/* Mobile: Related Games — cuộn ngang rõ ràng, thẻ không bị cắt, có padding hai bên */
 @media (max-width: 640px) {
   #game-page .related-games {
-    padding: 0 1.5rem;
+    padding: 0 0.5rem;
+    overflow: visible;
+  }
+  #game-page .related-games__grid {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 12px;
+    padding-right: 12px;
+    scroll-padding-inline: 12px;
+    gap: 12px;
+  }
+  #game-page .related-games__card {
+    width: 152px;
+    min-width: 152px;
+    scroll-snap-align: center;
   }
   #game-page .related-games__nav {
     width: 32px;
@@ -643,7 +657,16 @@
 }
 @media (max-width: 480px) {
   #game-page .related-games {
-    padding: 0 1rem;
+    padding: 0 0.25rem;
+  }
+  #game-page .related-games__grid {
+    padding-left: 16px;
+    padding-right: 16px;
+    scroll-padding-inline: 16px;
+  }
+  #game-page .related-games__card {
+    width: 140px;
+    min-width: 140px;
   }
   #game-page .related-games__nav {
     display: none;
@@ -685,6 +708,15 @@
   white-space: nowrap;
   box-sizing: border-box;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 640px) {
+  #game-page .home-content__related-title {
+    white-space: normal;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    line-height: 1.35;
+    max-width: calc(100% - 1rem);
+  }
 }
 #game-page .related-games {
   position: relative;

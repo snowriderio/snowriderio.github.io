@@ -44,29 +44,35 @@
 	<script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://snowrider-3d.org/"},{"@type":"ListItem","position":2,"name":"Snow Rider Games","item":"https://snowrider-3d.org/snow-rider.games/"}]},{"@type":"CollectionPage","name":"Snow Rider Games","url":"https://snowrider-3d.org/snow-rider.games/","description":"Browse Snow Rider Games and discover new picks in this collection.","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"Snow Rider 3D","url":"https://snowrider-3d.org/"}},{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://snowrider-3d.org/snow-rider-3d/","name":"Snow Rider 3D"},{"@type":"ListItem","position":2,"url":"https://snowrider-3d.org/snow-rider-2/","name":"Snow Rider 2"},{"@type":"ListItem","position":3,"url":"https://snowrider-3d.org/snow-rush-3d/","name":"Snow Rush 3D"},{"@type":"ListItem","position":4,"url":"https://snowrider-3d.org/christmas-sledge-rider-3d/","name":"Christmas Sledge Rider 3D"},{"@type":"ListItem","position":5,"url":"https://snowrider-3d.org/snow-rider-obby-parkour/","name":"Snow Rider Obby Parkour"},{"@type":"ListItem","position":6,"url":"https://snowrider-3d.org/ski-frenzy/","name":"Ski Frenzy"},{"@type":"ListItem","position":7,"url":"https://snowrider-3d.org/slope-snowball/","name":"Slope Snowball"},{"@type":"ListItem","position":8,"url":"https://snowrider-3d.org/winter-rider/","name":"Winter Rider"}]}]}
 	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preload" href="/data/image/logo-snow-rider-3d.png" as="image">
 	<link rel="preload" href="/themes/snowrider3d/rs/css/critical.css" as="style">
 	<link rel="stylesheet" type="text/css" href="/themes/snowrider3d/rs/css/critical.css">
 	<link rel="preload" href="/themes/snowrider3d/rs/css/all.css" as="style"
 		onload="this.onload=null;this.rel='stylesheet'">
 	<link rel="stylesheet" type="text/css" href="/themes/snowrider3d/rs/css/theme.css">
-	<link rel="stylesheet" type="text/css" href="/themes/snowrider3d/rs/css/search.css">
 	<link rel="stylesheet" type="text/css" href="/themes/snowrider3d/rs/css/custom.css">
-	<link rel="stylesheet" type="text/css" href="/themes/snowrider3d/rs/css/theme-winter-bg.css">
+	<link rel="stylesheet" type="text/css" href="/themes/snowrider3d/rs/css/search.css" media="print" onload="this.media='all'">
+	<link rel="stylesheet" type="text/css" href="/themes/snowrider3d/rs/css/theme-winter-bg.css" media="print" onload="this.media='all'">
+	<noscript><link rel="stylesheet" href="/themes/snowrider3d/rs/css/search.css"><link rel="stylesheet" href="/themes/snowrider3d/rs/css/theme-winter-bg.css"></noscript>
 		<link rel="stylesheet" type="text/css" href="/data/css/pages/category.css">
 	<link rel="preload" href="/themes/snowrider3d/rs/js/gm-storage.js" as="script">
-	<script src="/themes/snowrider3d/rs/js/gm-storage.js"></script>
+	<script src="/themes/snowrider3d/rs/js/gm-storage.js" defer></script>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
-		rel="stylesheet">
+		rel="stylesheet" media="print" onload="this.media='all'">
+	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"></noscript>
 	<link as="style" href="https://fonts.googleapis.com/css2?family=Fredoka+One&amp;display=swap"
 		rel="stylesheet preload prefetch" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<!-- Google Analytics 4 (GA4) -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"></noscript>
+	<!-- Google Analytics 4 (GA4) - config deferred to reduce TBT -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LFQV6VSLFV"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-		gtag('config', 'G-LFQV6VSLFV');
+		setTimeout(function() { gtag('config', 'G-LFQV6VSLFV'); }, 5000);
 	</script>
 </head>
 
@@ -332,7 +338,7 @@
 												src="/upload/snow-rush-3d.png" title="Snow Rush 3D" alt="Snow Rush 3D game thumbnail" />
 											<div class="us-game-title" title="Snow Rush 3D"><span class="text-overflow">Snow Rush 3D</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -342,7 +348,7 @@
 												src="/upload/christmas-sledge-rider-3d.png" title="Christmas Sledge Rider 3D" alt="Christmas Sledge Rider 3D game thumbnail" />
 											<div class="us-game-title" title="Christmas Sledge Rider 3D"><span class="text-overflow">Christmas Sledge Rider 3D</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -352,7 +358,7 @@
 												src="/upload/snow-rider-obby-parkour.png" title="Snow Rider Obby Parkour" alt="Snow Rider Obby Parkour game thumbnail" />
 											<div class="us-game-title" title="Snow Rider Obby Parkour"><span class="text-overflow">Snow Rider Obby Parkour</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -372,7 +378,7 @@
 												src="/upload/slope-snowball.png" title="Slope Snowball" alt="Slope Snowball game thumbnail" />
 											<div class="us-game-title" title="Slope Snowball"><span class="text-overflow">Slope Snowball</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -382,7 +388,7 @@
 												src="/upload/winter-rider.png" title="Winter Rider" alt="Winter Rider game thumbnail" />
 											<div class="us-game-title" title="Winter Rider"><span class="text-overflow">Winter Rider</span></div>
 										</div>
-										<div class="GameThumbLabel GameThumbLabel_Hot">Hot</div>
+										<div class="GameThumbLabel GameThumbLabel_New">New</div>
 										<div class="GameThumb_gradientVignette__Q04oZ"></div>
 									</a>
 								</div>
@@ -443,11 +449,12 @@
 		<div class="loading_page"><img class="loadingImage" width="44" height="44"
 				src="/themes/snowrider3d/rs/imgs/us-page-loading.gif" /></div>
 	</div>
-	<script src="/themes/snowrider3d/rs/js/jquery-3.4.1.min.js"></script>
-	<script src="/themes/snowrider3d/rs/js/jquery.validate.min.js"></script>
-	<script src="/themes/snowrider3d/rs/js/footer.js"></script>
-	<script src="/data/js/search.js"></script>
-	<script src="/themes/snowrider3d/rs/js/fullscreen.js"></script>
+	<script src="/data/js/lazy-iframe.js" defer></script>
+	<script src="/themes/snowrider3d/rs/js/jquery-3.4.1.min.js" defer></script>
+	<script src="/themes/snowrider3d/rs/js/jquery.validate.min.js" defer></script>
+	<script src="/themes/snowrider3d/rs/js/footer.js" defer></script>
+	<script src="/data/js/search.js" defer></script>
+	<script src="/themes/snowrider3d/rs/js/fullscreen.js" defer></script>
 	<script src="/data/js/sidebar-games.js" defer></script>
 	<script src="/data/js/related-games-scroll.js" defer></script>
 </body>

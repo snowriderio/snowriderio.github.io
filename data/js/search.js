@@ -134,10 +134,15 @@ function setupSearchBox(inputId, resultsId) {
         }
         results.innerHTML = '<div class="search-loading">Loading...</div>';
         results.classList.add('show');
-        searchTimeout = setTimeout(() => {
+        const doSearch = function () {
             const searchResults = searchGames(query);
             displaySearchResults(searchResults, resultsId);
-        }, 300);
+        };
+        if (gamesData.length === 0) {
+            loadGamesData().then(doSearch);
+        } else {
+            searchTimeout = setTimeout(doSearch, 300);
+        }
     });
     document.addEventListener('click', function (e) {
         if (!input.contains(e.target) && !results.contains(e.target)) {
@@ -147,8 +152,15 @@ function setupSearchBox(inputId, resultsId) {
     input.addEventListener('focus', function () {
         const query = this.value.trim();
         if (query.length >= 2) {
-            const searchResults = searchGames(query);
-            displaySearchResults(searchResults, resultsId);
+            if (gamesData.length === 0) {
+                loadGamesData().then(function () {
+                    const searchResults = searchGames(query);
+                    displaySearchResults(searchResults, resultsId);
+                });
+            } else {
+                const searchResults = searchGames(query);
+                displaySearchResults(searchResults, resultsId);
+            }
         }
     });
     const form = input.closest('form');
@@ -210,11 +222,32 @@ function renderSearchPageResults() {
     }).join('');
 }
 
-document.addEventListener('DOMContentLoaded', async function () {
-    await loadGamesData();
+function runSearchInit() {
     setupSearchBox('txt-search1', 'search-results-desktop');
     setupSearchBox('txt-search2', 'search-results-mobile');
-    if (/^\/search\/?$/.test(window.location.pathname)) {
-        renderSearchPageResults();
+}
+
+document.addEventListener('DOMContentLoaded', async function () {
+    var isMobile = typeof window.matchMedia !== 'undefined' && window.matchMedia('(max-width: 768px)').matches;
+    if (isMobile) {
+        runSearchInit();
+        if (/^\/search\/?$/.test(window.location.pathname)) {
+            await loadGamesData();
+            renderSearchPageResults();
+        } else {
+            if (typeof requestIdleCallback !== 'undefined') {
+                requestIdleCallback(async function () {
+                    await loadGamesData();
+                }, { timeout: 2000 });
+            } else {
+                setTimeout(function () { loadGamesData(); }, 100);
+            }
+        }
+    } else {
+        await loadGamesData();
+        runSearchInit();
+        if (/^\/search\/?$/.test(window.location.pathname)) {
+            renderSearchPageResults();
+        }
     }
 });

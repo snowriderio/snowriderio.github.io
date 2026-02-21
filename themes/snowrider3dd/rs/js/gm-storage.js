@@ -6,7 +6,12 @@ class GMStorage {
         this.arrayLikesStorage = [];
         this.arrayDislikesStorage = [];
         this.arrayRecentStorage = [];
-        this.load();
+        this._loadScheduled = false;
+        if (typeof requestIdleCallback !== 'undefined') {
+            requestIdleCallback(() => { this._loadScheduled = true; this.load(); }, { timeout: 600 });
+        } else {
+            setTimeout(() => { this._loadScheduled = true; this.load(); }, 0);
+        }
     }
 
     load = () => {

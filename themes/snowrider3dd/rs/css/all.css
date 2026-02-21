@@ -1659,6 +1659,37 @@ footer {
         min-height: 540px;
     }
 
+    /* Tránh các khối game đè lên nhau trên mobile */
+    .us-grid-clayover,
+    .us-grid-clayover-mini {
+        gap: 16px;
+        overflow: hidden;
+        grid-auto-rows: minmax(120px, auto);
+    }
+
+    .us-grid-clayover-category {
+        grid-auto-rows: minmax(108px, auto);
+    }
+
+    .us-grid-game {
+        overflow: hidden;
+        min-height: 0;
+        isolation: isolate;
+        border-radius: 10px;
+    }
+
+    .us-grid-game .us-game-link,
+    .us-grid-game .us-wrap-image {
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .us-span-2x1,
+    .us-span-2x2,
+    .us-span-3x3 {
+        grid-column: auto;
+        grid-row: auto;
+    }
 }
 
 @media (max-width: 576px) {
